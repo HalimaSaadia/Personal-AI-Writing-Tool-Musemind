@@ -232,16 +232,24 @@ nav #navbarCrossIcon {
 }
 
 /* How To Use Tools */
+.how-to-use-tools .heading{
+    text-align: center;
+    margin-bottom: 40px;
+}
 
-.how-to-use-tools {
-  
-  
+.how-to-use-tools .typing-tone{
+    background-color: #f8f1fc;
+}
+.how-to-use-tools .customize-copy{
+    background-color: #FAEAE6;
+}
+.how-to-use-tools .re-write-text{
+    background-color: #E5EFFF;
 }
 
 .how-to-use-tools-container {
   display: flex;
   flex-direction: column;
-  background-color: #f8f1fc;
   border-radius: 24px;
   padding: 40px 0;
   margin: 40px 0;
@@ -273,6 +281,14 @@ nav #navbarCrossIcon {
   }
 .typing-tone .how-to-use-tools-content .orderNumber{
   color: #B97FE6;
+
+}
+.customize-copy .how-to-use-tools-content .orderNumber{
+  color: #EBA999;
+
+}
+.re-write-text .how-to-use-tools-content .orderNumber{
+  color: #7AADFF;
 
 }
 
@@ -326,6 +342,12 @@ nav #navbarCrossIcon {
   }
   .email-writing-extension-content p {
     padding: 20px;
+  }
+
+  /* How to use Tools */
+  .how-to-use-tools .heading p{
+    width: 50%;
+    margin: auto;
   }
   .how-to-use-tools-container h1 {
     font-size: 32px;
@@ -413,17 +435,16 @@ nav #navbarCrossIcon {
     padding-left: 0;
   }
 
-  /* Re writing Section */
-  .re-writing-text-media {
-    order: 9999;
-  }
+ 
 
   /* How To Use Tools */
+ 
   .how-to-use-tools-container {
     flex-direction: row-reverse;
     justify-content: space-between;
     padding: 80px 0;
   }
+  
   .how-to-use-tools-container > div {
     flex: 1 1 0%;
   }
@@ -435,6 +456,10 @@ nav #navbarCrossIcon {
 
   .how-to-use-tools-container h1 {
     font-size: 48px;
+  }
+   /* Re writing Section */
+   .re-writing-text-media {
+    order: 9999;
   }
 }
 
@@ -465,7 +490,10 @@ nav #navbarCrossIcon {
   }
 
   /* How To Use Tools */
-
+  .how-to-use-tools .heading p{
+    width: 40%;
+    margin: auto;
+  }
   
   .how-to-use-tools-container h1 {
     font-size: 56px;
@@ -476,5 +504,8 @@ nav #navbarCrossIcon {
   }
   .how-to-use-tools-content > div{
     max-width: 500px;
+  }
+  .customize-copy .how-to-use-tools-content > div{
+    max-width: 350px;
   }
 }
