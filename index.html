@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pwrite</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Font Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="container">
+        <div class="navbarLogo">
+          <img src="./images/navbar/star.png" alt="" />
+          <h3>Pwrite</h3>
+        </div>
+        <div class="navItem">
+          <ul>
+            <li><a href="#">Feature</a></li>
+            <li><a href="#">Benefit</a></li>
+            <li><a href="#">How It Works</a></li>
+            <li><a href="#">Pricing</a></li>
+          </ul>
+        </div>
+        <div class="navbarLoginSection">
+          <a href="#">Login</a>
+          <button>Try It Free</button>
+        </div>
+        <div id="navbarToggleButton" class="toggleNavbar">
+          <div onclick="toggleNavbar()" id="navbarGripLines">
+            <svg width="40" height="40" xmlns="http://www.w3.org/2000/svg">
+              <line
+                x1="5"
+                y1="10"
+                x2="45"
+                y2="10"
+                stroke="gray"
+                stroke-width="2"
+              />
+              <line
+                x1="5"
+                y1="20"
+                x2="45"
+                y2="20"
+                stroke="gray"
+                stroke-width="2"
+              />
+              <line
+                x1="5"
+                y1="30"
+                x2="45"
+                y2="30"
+                stroke="gray"
+                stroke-width="2"
+              />
+            </svg>
+          </div>
+
+          <div onclick="toggleNavbar()" id="navbarCrossIcon">
+            <svg width="40" height="40" xmlns="http://www.w3.org/2000/svg">
+              <line
+                x1="5"
+                y1="5"
+                x2="35"
+                y2="35"
+                stroke="gray"
+                stroke-width="2"
+              />
+              <line
+                x1="5"
+                y1="35"
+                x2="35"
+                y2="5"
+                stroke="gray"
+                stroke-width="2"
+              />
+            </svg>
+          </div>
+        </div>
+        <div class="navItemSmallDeviceContainer">
+            <div id="navItemSmallDevice" class="navItemSmallDevice">
+                <ul>
+                  <li><a href="#">Feature</a></li>
+                  <li><a href="#">Benefit</a></li>
+                  <li><a href="#">How It Works</a></li>
+                  <li><a href="#">Pricing</a></li>
+                  <li><a href="#">Login</a></li>
+                  <button>Try It Free</button>
+                </ul>
+              </div>
+        </div>
+      </nav>
+    </header>
+
+    <script src="script.js"></script>
+  </body>
+</html>

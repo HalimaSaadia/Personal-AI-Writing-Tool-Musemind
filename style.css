@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+body{
+    padding: 10px;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+header{
+    max-width: 1343px;
+    box-shadow: 0px 4px 60px 0px #00000014;
+    margin: 20px auto;
+    border-radius: 24px;
+    padding: 10px;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 92px;
+  
+
+    
+}
+nav .navbarLogo{
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+    font-size: 32px;
+    font-weight: 600;
+    color: #391952;
+}
+
+nav .navbarLogo img{
+    width: 34px;
+    height: 34px;
+}
+nav .navItem ul{
+    display: none;
+    list-style: none; 
+    gap: 42px;
+}
+nav  a {
+    font-size: 18px;
+    color: #391952;
+    font-weight: 500;
+    display: inline-block;
+}
+nav .navbarLoginSection{
+    display: none;
+    align-items: center;
+    gap: 24px;
+}
+
+nav  button{
+ background-color: #391952;
+ color: white;
+ padding: 13px 24px;
+ border-radius: 100px;
+ font-size: 16px;
+ border: none;
+}
+nav .navItemSmallDeviceContainer{
+    position: fixed;
+    top: 100px;
+}
+nav .navItemSmallDevice{
+    position: fixed;
+    top: 100px;
+    display: none;
+    background-color: white;
+    padding: 10px 40px 10px 10px;
+    box-shadow:  0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+}
+nav .navItemSmallDevice  li{
+    margin-bottom: 8px;
+    padding: 5px;
+    border-radius: 5px;
+    transition: background-color .3s ease-in-out;
+}
+
+nav .navItemSmallDevice  li a{
+    transition: color .3s ease-in-out;
+}
+
+nav .navItemSmallDevice  li:hover{
+    background-color: #391952;
+   
+}
+
+nav .navItemSmallDevice ul li:hover a{
+    color: white;
+}
+
+nav .navItemSmallDevice button{
+    display: block;
+    margin-top: 5px;
+}
+nav #navbarCrossIcon{
+    display: none;
+}
+@media screen and (min-width: 768px) {
+    body{
+        padding: 0 20px;
+    }
+
+    
+    
+}
+
+@media screen and (min-width: 1024px) {
+    body{
+        padding: 0 20px;
+    }
+    header{
+        padding: 0 20px;
+    }
+
+    nav .navItem ul{
+        display: flex;
+    }
+    nav .navbarLoginSection{
+        display: flex;
+    }
+
+    nav .toggleNavbar{
+        display: none;
+    }
+
+  nav .navItemSmallDeviceContainer{
+    display: none;
+  }
+    
+}
+
+@media screen and (min-width: 1280px) {
+    body{
+        padding: 0;
+    }
+    header{
+        padding: 0;
+    }
+}
