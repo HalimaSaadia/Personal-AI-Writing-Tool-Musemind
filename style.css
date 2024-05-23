@@ -161,10 +161,7 @@ nav #navbarCrossIcon {
   border: 2px solid black;
 }
 
-/* How Pwrite Improve Writing */
-/* .improve-writing {
-  padding: 80px 0;
-} */
+
 .improve-writing .heading {
   display: flex;
   align-items: flex-start;
@@ -224,6 +221,11 @@ nav #navbarCrossIcon {
 }
 .email-writing-extension-content button {
     margin: 0 auto;
+  }
+
+  /* Re Writing Text  */
+  .re-writing-text-content .lightFontHeading{
+    color: #5A7AF9;
   }
 
   /* Enhance Must Have Tools */
@@ -358,6 +360,11 @@ nav #navbarCrossIcon {
   .email-writing-extension-content p {
     width: 100%;
     padding-left: 0;
+  }
+
+  /* Re writing Section */
+  .re-writing-text-media{
+    order: 9999;
   }
 }
 
