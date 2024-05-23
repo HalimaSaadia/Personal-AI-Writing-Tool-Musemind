@@ -60,9 +60,9 @@ header {
   background-color: white;
   z-index: 10;
 }
-nav{
-    margin: 0 auto;
-    max-width: 1200px;
+nav {
+  margin: 0 auto;
+  max-width: 1200px;
 }
 nav button {
   background-color: #391952;
@@ -161,7 +161,6 @@ nav #navbarCrossIcon {
   border: 2px solid black;
 }
 
-
 .improve-writing .heading {
   display: flex;
   align-items: flex-start;
@@ -201,7 +200,6 @@ nav #navbarCrossIcon {
   font-size: 18px;
 }
 
-
 /* Email Writing Extension */
 
 .email-writing-extension-container {
@@ -217,22 +215,70 @@ nav #navbarCrossIcon {
   display: grid;
   gap: 10px;
   text-align: center;
-    justify-content: center;
+  justify-content: center;
 }
 .email-writing-extension-content button {
-    margin: 0 auto;
-  }
+  margin: 0 auto;
+}
 
-  /* Re Writing Text  */
-  .re-writing-text-content .lightFontHeading{
-    color: #5A7AF9;
-  }
+/* Re Writing Text  */
+.re-writing-text-content .lightFontHeading {
+  color: #5a7af9;
+}
 
-  /* Enhance Must Have Tools */
+/* Enhance Must Have Tools */
 .must-have-tools {
-    padding: 80px 0;
-  }
+  padding: 80px 0;
+}
 
+/* How To Use Tools */
+
+.how-to-use-tools {
+  
+  
+}
+
+.how-to-use-tools-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #f8f1fc;
+  border-radius: 24px;
+  padding: 40px 0;
+  margin: 40px 0;
+}
+
+
+.how-to-use-tools-media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.how-to-use-tools-content {
+  width: 100%;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  color: #391952;
+  padding: 0 20px;
+  text-align: center;
+}
+.how-to-use-tools-container h1{
+  font-size: 22px;
+  font-weight: 700;
+  margin: 12px 0;
+}
+.how-to-use-tools-container p {
+    font-size: 18px;
+    margin: 24px 0;
+  }
+.typing-tone .how-to-use-tools-content .orderNumber{
+  color: #B97FE6;
+
+}
+
+.how-to-use-tools-container img {
+  max-width: 260px;
+}
 
 @media screen and (min-width: 768px) {
   body {
@@ -275,13 +321,19 @@ nav #navbarCrossIcon {
   .email-writing-extension-media img {
     max-width: 450px;
   }
-  .email-writing-extension-content{
+  .email-writing-extension-content {
     gap: 0px;
   }
   .email-writing-extension-content p {
     padding: 20px;
   }
- 
+  .how-to-use-tools-container h1 {
+    font-size: 32px;
+  }
+
+  .how-to-use-tools-container img {
+    max-width: max-content;
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -343,28 +395,46 @@ nav #navbarCrossIcon {
     align-items: center;
   }
 
-
   .email-writing-extension-container img {
     max-width: 500px;
     margin-right: 20px;
   }
 
-  .email-writing-extension-content{
+  .email-writing-extension-content {
     text-align: left;
     gap: 0px;
   }
-  .email-writing-extension-content button{
+  .email-writing-extension-content button {
     margin: 0;
   }
-  
+
   .email-writing-extension-content p {
     width: 100%;
     padding-left: 0;
   }
 
   /* Re writing Section */
-  .re-writing-text-media{
+  .re-writing-text-media {
     order: 9999;
+  }
+
+  /* How To Use Tools */
+  .how-to-use-tools-container {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding: 80px 0;
+  }
+  .how-to-use-tools-container > div {
+    flex: 1 1 0%;
+  }
+  
+  .how-to-use-tools-content > div {
+    max-width: 400px;
+    text-align: left;
+  }
+
+  .how-to-use-tools-container h1 {
+    font-size: 48px;
   }
 }
 
@@ -373,7 +443,7 @@ nav #navbarCrossIcon {
     padding: 0;
   }
   header {
-    padding: 0 ;
+    padding: 0;
   }
   .sectionHeading {
     font-size: 72px;
@@ -384,14 +454,27 @@ nav #navbarCrossIcon {
   .improve-writing .heading {
     display: flex;
   }
-  .email-writing-extension-container{
+  .email-writing-extension-container {
     gap: 80px;
   }
-  .email-writing-extension-container img{
+  .email-writing-extension-container img {
     max-width: 587px;
   }
   .email-writing-extension-content {
     display: grid;
-    /* gap: 10px; */
+  }
+
+  /* How To Use Tools */
+
+  
+  .how-to-use-tools-container h1 {
+    font-size: 56px;
+  }
+  .how-to-use-tools-container p {
+    font-size: 22px;
+    margin: 24px 0;
+  }
+  .how-to-use-tools-content > div{
+    max-width: 500px;
   }
 }
