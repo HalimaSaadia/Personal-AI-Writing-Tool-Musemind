@@ -494,13 +494,49 @@ footer {
   background-color: #f8f2fc;
   padding: 0 20px;
   height: max-content;
+  border-radius: 65px 65px 0 0;
 }
+.social  {
+  display: grid;
+  grid-template-columns: auto;
+  color: #391952;
+  font-weight: 500;
+  width: 290px;
+  gap:30px;
+  padding-top: 100px;
+  padding-bottom: 50px;
+   
+}
+.social > .social-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-bottom: 1px solid #391952 ;
+}
+.social .article-card{
+  border-bottom: none ;
+}
+.social > .social-card > .card-content{
+  display: flex;
+  justify-content: space-between;
+  height: 32px;
+  cursor: pointer;
+}
+.social > .social-card .card-content > div{
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  height: max-content;
+}
+
+
 footer nav {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: baseline;
   row-gap: 40px;
+ 
 }
 footer nav ul {
   display: flex;
@@ -517,6 +553,37 @@ footer nav .title a {
   font-size: 22px;
   font-weight: 700;
   color: #20231e;
+}
+footer .copyright{
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  flex-wrap: wrap;
+  padding: 40px 0;
+  padding-top: 80px;
+}
+footer .copyright img{
+  height: 34px;
+  width: 34px;
+}
+footer .copyright > div {
+ display: flex;
+ align-items: center;
+ color: #1F1F1F;
+ 
+ 
+}
+footer .copyright h3{
+  font-size: 28px;
+  margin-left: 10px;
+}
+.copyright-list{
+  gap: 24px;
+  flex-wrap: wrap;
+}
+.copyright-list p{
+  font-size: 14px;
+  line-height: 14px;
 }
 
 @media screen and (min-width: 768px) {
@@ -630,6 +697,16 @@ footer nav .title a {
   }
 
   /* Footer */
+  .social{
+    grid-template-columns: repeat(2,auto);
+    gap:50px;
+  }
+  .social .social-card {
+    width: 320px;
+  }
+  .social > .social-card > .card-content{
+    height: 48px;
+  }
   footer nav {
     justify-content: space-between;
   }
@@ -773,6 +850,19 @@ footer nav .title a {
   .fast-writing-content .facilities {
     gap: 40px;
   }
+
+  /* Footer */
+  .social{
+    grid-template-columns: auto auto auto; 
+    gap: 30px;
+    padding: 100px 0;
+  }
+  .social .community-card{
+    border-bottom: none;
+  }
+  .social .social-card {
+    width: 300px;
+  }
 }
 
 @media screen and (min-width: 1280px) {
@@ -828,5 +918,14 @@ footer nav .title a {
 
   .fast-writing-content {
     max-width: 890px;
+  }
+
+  /* Footer */
+  .social{
+    grid-template-columns: repeat(3,auto);
+    gap: 50px;
+  }
+  .social .social-card {
+    width: 390px;
   }
 }
