@@ -22,13 +22,15 @@ button {
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1280px;
   margin: 0 auto;
   padding: 80px 0;
 }
 .sectionHeading {
   color: #391952;
   font-size: 30px;
+  line-height: 40px;
+  
 }
 
 .lightFontHeading {
@@ -37,6 +39,8 @@ button {
 .sectionDescription {
   color: #391952;
   font-size: 18px;
+  line-height: 22px;
+  margin-top: 10px;
 }
 
 .primaryButton {
@@ -62,7 +66,7 @@ header {
 }
 nav {
   margin: 0 auto;
-  max-width: 1200px;
+  max-width: 1280px;
 }
 nav button {
   background-color: #391952;
@@ -296,6 +300,49 @@ nav #navbarCrossIcon {
   max-width: 260px;
 }
 
+/* More Power To Enhance Tools */
+.more-power .heading br{
+  display: none;
+}
+.more-power-content-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+.more-power-content-container>div{
+  border-radius: 24px;
+  width: 300px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  color: #391952;
+  text-align: center;
+}
+.more-power-content-container>div h3{
+  font-size: 22px;
+  line-height: 39px;
+  font-weight: 700;
+}
+
+.more-power-content-container>div p{
+font-size: 14px;
+line-height: 25px;
+}
+
+.more-power-content-container .email-card{
+  background-color: #F8F1FC;
+}
+.more-power-content-container .spelling-checker-card{
+  background-color: #E5EFFF;
+}
+.more-power-content-container .blogs-card{
+  background-color: #FAEAE6;
+}
 @media screen and (min-width: 768px) {
   body {
     padding: 0 30px;
@@ -308,13 +355,12 @@ nav #navbarCrossIcon {
   .sectionDescription {
     line-height: 33px;
   }
+ 
   .improve-writing .heading {
     align-items: center;
   }
 
-  /* .improve-writing .heading >div p{
-        width: 100%;
-    } */
+ 
   .improve-writing .heading img {
     width: 200px;
   }
@@ -355,6 +401,19 @@ nav #navbarCrossIcon {
 
   .how-to-use-tools-container img {
     max-width: max-content;
+  }
+
+  /* More Power To Enhance Tools */
+  .more-power .heading br{
+    display: block;
+  }
+  .more-power-content-container>div{
+    width:  320px;
+    height: 340px;
+    padding: 0;
+  }
+  .more-power-content-container>div p{
+    width: 290px;
   }
 }
 
@@ -460,6 +519,21 @@ nav #navbarCrossIcon {
    /* Re writing Section */
    .re-writing-text-media {
     order: 9999;
+  }
+
+  /* More Power  To Everything You write*/
+  .more-power-content-container>div{
+    width:  412px;
+    height: 412px;
+    padding: 0;
+  }
+
+  .more-power-content-container>div h3{
+    font-size: 28px;
+  
+  }
+  .more-power-content-container>div p{
+    font-size: 18px;
   }
 }
 
