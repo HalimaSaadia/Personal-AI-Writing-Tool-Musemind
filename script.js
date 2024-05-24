@@ -3,7 +3,6 @@ const navbarToggleButton = document.getElementById("navbarToggleButton");
 const navbarGripIcon = document.getElementById("navbarGripLines")
 const navbarCrossIcon = document.getElementById("navbarCrossIcon")
 const navbarSmallDevice = document.getElementById("navItemSmallDevice")
-console.log(isNavbarOpen)
 
 const toggleNavbar = () =>{
     navbarGripIcon.style.transition = "display .3s ease"
@@ -24,3 +23,16 @@ const toggleNavbar = () =>{
  
 }
 
+
+// FAQ
+const detailsElements = document.querySelectorAll("details")
+
+detailsElements.forEach(targetElement => {
+    targetElement.addEventListener("click",()=>{
+        detailsElements.forEach(otherDetailsElement=>{
+            if(otherDetailsElement!==targetElement){
+                otherDetailsElement.removeAttribute("open")
+            }
+        })
+    })
+})
