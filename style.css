@@ -10,8 +10,8 @@ a {
   text-decoration: none;
 }
 
-body {
-  padding: 15px;
+main {
+  padding: 0 20px;
 }
 
 button {
@@ -192,7 +192,6 @@ nav #navbarCrossIcon {
   display: grid;
   gap: 16px;
   width: 300px;
-
   color: #391952;
 }
 .improve-writing-card h3 {
@@ -209,7 +208,6 @@ nav #navbarCrossIcon {
   display: flex;
   flex-direction: column;
   gap: 30px;
-  /* padding: 80px 0; */
 }
 .email-writing-extension-container img {
   max-width: 300px;
@@ -402,6 +400,53 @@ nav #navbarCrossIcon {
   gap: 10px;
 }
 
+/* Testimonial */
+.testimonial {
+  background-color: #f9f7f5;
+  padding: 80px 0;
+}
+
+.testimonial .feedbackSection {
+  display: flex;
+  gap: 18px;
+  margin-top: 80px;
+}
+
+.testimonial .feedbackCard {
+  min-height: 227px;
+  width: 411px;
+  background-color: white;
+  padding: 36px 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border-radius: 16px;
+  color: #391952;
+}
+
+.testimonial .feedbackCard h5 {
+  font-size: 16px;
+  font-weight: 700;
+}
+.testimonial .feedbackCard p {
+  font-size: 14px;
+  line-height: 22px;
+}
+.testimonial .feedbackCard .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.testimonial .feedbackCard .profileSection {
+  display: flex;
+  gap: 12px;
+}
+
+.testimonial .feedbackCard .profileSection > div {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
 /* Faq */
 
 .FAQ .FAQ-content {
@@ -444,11 +489,40 @@ details[open] summary::after {
   font-size: 32px;
 }
 
+/* Footer */
+footer {
+  background-color: #f8f2fc;
+  padding: 0 20px;
+  height: max-content;
+}
+footer nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+  row-gap: 40px;
+}
+footer nav ul {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  justify-self: start;
+  flex-grow: 999;
+}
+footer nav a {
+  color: #1f1f1f;
+  font-size: 18px;
+}
+footer nav .title a {
+  font-size: 22px;
+  font-weight: 700;
+  color: #20231e;
+}
+
 @media screen and (min-width: 768px) {
-  body {
+  main {
     padding: 0 30px;
   }
-
   .sectionHeading {
     font-size: 38px;
     line-height: 56px;
@@ -554,10 +628,18 @@ details[open] summary::after {
   .fast-writing-content .facilities {
     gap: 20px;
   }
+
+  /* Footer */
+  footer nav {
+    justify-content: space-between;
+  }
+  footer nav ul {
+    gap: 24px;
+  }
 }
 
 @media screen and (min-width: 1024px) {
-  body {
+  main {
     padding: 0 20px;
   }
   .sectionHeading {
@@ -570,7 +652,7 @@ details[open] summary::after {
   .sectionDescription {
     font-size: 22px;
   }
-  nav {
+  header nav {
     height: 92px;
   }
 
