@@ -404,12 +404,34 @@ nav #navbarCrossIcon {
 .testimonial {
   background-color: #f9f7f5;
   padding: 80px 0;
+  overflow: hidden;
+  height: 800px;
+  position: relative;
+  
 }
 
+.testimonial center{
+  margin-bottom: 80px;
+ 
+
+}
+
+.testimonial .feedbackSectionContainer{
+  animation: marquee 20s linear infinite;
+  position: absolute;
+  
+}
 .testimonial .feedbackSection {
   display: flex;
   gap: 18px;
-  margin-top: 80px;
+  margin-bottom: 20px;
+  
+}
+.testimonial .feedbackSectionContainer:hover{
+  animation-play-state: paused;
+}
+.testimonial .feedSectionFirstRow {
+  margin-left: -206px;
 }
 
 .testimonial .feedbackCard {
@@ -422,6 +444,7 @@ nav #navbarCrossIcon {
   gap: 10px;
   border-radius: 16px;
   color: #391952;
+ 
 }
 
 .testimonial .feedbackCard h5 {
@@ -446,6 +469,15 @@ nav #navbarCrossIcon {
   display: flex;
   flex-direction: column;
   gap: 12px;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(100%); 
+  }
+  100% {
+    transform: translateX(-100%);
+  }
 }
 /* Faq */
 
@@ -495,7 +527,13 @@ footer {
   padding: 0 20px;
   height: max-content;
   border-radius: 65px 65px 0 0;
+  margin: 0 auto;
 }
+footer section{
+  max-width: 1281px;
+  margin: 0 auto;
+}
+
 .social  {
   display: grid;
   grid-template-columns: auto;
@@ -505,8 +543,8 @@ footer {
   gap:30px;
   padding-top: 100px;
   padding-bottom: 50px;
-   
 }
+
 .social > .social-card {
   display: flex;
   flex-direction: column;
@@ -719,6 +757,7 @@ footer .copyright h3{
   main {
     padding: 0 20px;
   }
+
   .sectionHeading {
     font-size: 48px;
     line-height: 66px;
@@ -909,6 +948,10 @@ footer .copyright h3{
   }
   .customize-copy .how-to-use-tools-content > div {
     max-width: 350px;
+  }
+  /* Testimonial */
+  .testimonial{
+    height: 850px;
   }
   /* FAQ */
   .FAQ .FAQ-content p {
