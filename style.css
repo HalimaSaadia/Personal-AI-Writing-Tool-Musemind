@@ -10,7 +10,7 @@ a {
   text-decoration: none;
 }
 
-main {
+.sectionPadding {
   padding: 0 20px;
 }
 
@@ -24,7 +24,7 @@ button {
 .container {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 80px 0;
+  padding: 80px 20px;
 }
 .sectionHeading {
   color: #391952;
@@ -156,47 +156,48 @@ nav #navbarCrossIcon {
 }
 
 /* Hero */
+
+/* Banner */
 .banner {
   background-image: url("./images/hero/banner.png");
   background-size: 130%;
   max-width: 1314px;
   padding: 20px 0;
-  background-position:center;
+  background-position: center;
   background-repeat: no-repeat;
   text-align: center;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  justify-content:center;
+  justify-content: center;
   position: relative;
- 
 }
 
-.banner .banner-content{
+.banner .banner-content {
   text-align: center;
   margin: 0 auto;
 }
 
-.banner  img{
-position: absolute;
-width: 30px;
-height: 30px;
+.banner img {
+  position: absolute;
+  width: 30px;
+  height: 30px;
 }
 
-.banner .arrow-icon{
-top: 25%;
-left: 5%;
+.banner .arrow-icon {
+  top: 25%;
+  left: 5%;
 }
-.banner .pen-icon{
+.banner .pen-icon {
   top: 30%;
   right: 10%;
 }
-.banner .note-icon{
+.banner .note-icon {
   left: 5%;
   bottom: 5%;
 }
-.banner .mail-icon{
-  right:  10%;
+.banner .mail-icon {
+  right: 10%;
   bottom: 20%;
 }
 .banner .banner-content h1 {
@@ -207,7 +208,6 @@ left: 5%;
   font-weight: 500;
   line-height: 22px;
   margin: 20px auto;
-  
 }
 .banner .banner-content button {
   margin: 0 auto;
@@ -217,8 +217,48 @@ left: 5%;
   justify-content: center;
   margin-top: 20px;
   font-size: 12px;
-
 }
+
+/* Rating */
+
+.hero .rating {
+  display: flex;
+  row-gap: 28px;
+  column-gap: 24px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 50px auto;
+}
+
+.hero .rating > div {
+  height: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.hero .rating > div > div {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.rating-number > img {
+  height: 20px;
+}
+.rating p {
+  color: #a292af;
+  font-size: 16px;
+  font-weight: 500;
+}
+.rating h5 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #391952;
+}
+.rating .satisfied-client {
+  border-top: 2px solid #391952;
+  padding-top: 20px;
+}
+/* Improve Writing */
 .improve-writing .heading {
   display: flex;
   align-items: flex-start;
@@ -284,7 +324,7 @@ left: 5%;
 
 /* Enhance Must Have Tools */
 .must-have-tools {
-  padding: 80px 0;
+  padding: 80px auto;
 }
 
 /* How To Use Tools */
@@ -401,6 +441,8 @@ left: 5%;
   max-width: 1420px;
   padding: 40px 0;
   margin: 0 auto;
+  position: relative;
+  margin-bottom: -100px;
 }
 
 .fast-writing-content {
@@ -577,6 +619,10 @@ footer {
   height: max-content;
   border-radius: 65px 65px 0 0;
   margin: 0 auto;
+  padding-top: 100px;
+  z-index: -10;
+ 
+  
 }
 footer section {
   max-width: 1281px;
@@ -670,9 +716,7 @@ footer .copyright h3 {
 }
 
 @media screen and (min-width: 768px) {
-  main {
-    padding: 0 30px;
-  }
+  
   .sectionHeading {
     font-size: 38px;
     line-height: 56px;
@@ -682,44 +726,55 @@ footer .copyright h3 {
   }
 
   /* Hero */
-  .banner{
+  .banner {
     height: 600px;
     padding-bottom: 150px;
     background-size: cover;
     padding: 0 0;
   }
-  .banner .banner-content{
+  .banner .banner-content {
     max-width: 400px;
-   
   }
-  .banner .arrow-icon{
+  .banner .arrow-icon {
     top: 20%;
     left: 5%;
-    }
-    .banner .pen-icon{
-      top: 25%;
-      right: 5%;
-    }
-    .banner .note-icon{
-      left: 10%;
-      bottom: 20%;
-    }
-    .banner .mail-icon{
-      right:  10%;
-      bottom: 20%;
-    }
-  .banner .banner-content h1{
+  }
+  .banner .pen-icon {
+    top: 25%;
+    right: 5%;
+  }
+  .banner .note-icon {
+    left: 10%;
+    bottom: 20%;
+  }
+  .banner .mail-icon {
+    right: 10%;
+    bottom: 20%;
+  }
+  .banner .banner-content h1 {
     font-size: 64px;
     line-height: normal;
   }
-  .banner .banner-content button{
+  .banner .banner-content button {
     width: 192px;
     font-size: 16px;
   }
-  .banner .banner-content p{
+  .banner .banner-content p {
     width: 300px;
   }
+  /* Rating */
+  .hero .rating {
+    width: max-content;
+    margin: 100px auto;
+    column-gap: 83px;
+  }
 
+  .rating .satisfied-client {
+    border-top: none;
+    padding-top: 0;
+    border-left: 2px solid #391952;
+    padding-left: 30px;
+  }
   .improve-writing .heading {
     align-items: center;
   }
@@ -804,6 +859,7 @@ footer .copyright h3 {
     max-width: 520px;
     padding: 20px;
     gap: 36px;
+    z-index: 50;
   }
   .fast-writing-content .search-bar {
     height: 48px;
@@ -873,39 +929,39 @@ footer .copyright h3 {
 
   /* Hero */
 
-  .banner{
+  .banner {
     height: 900px;
     padding-bottom: 200px;
   }
-  .banner .banner-content{
+  .banner .banner-content {
     max-width: 600px;
   }
 
-  .banner .banner-content h1{
+  .banner .banner-content h1 {
     font-size: 92px;
     line-height: normal;
   }
-  .banner .banner-content p{
+  .banner .banner-content p {
     width: 450px;
     margin: 40px auto;
     line-height: 33px;
   }
-  .banner .arrow-icon{
+  .banner .arrow-icon {
     top: 20%;
     left: 10%;
-    }
-    .banner .pen-icon{
-      top: 25%;
-      right: 10%;
-    }
-    .banner .note-icon{
-      left: 20%;
-      bottom: 20%;
-    }
-    .banner .mail-icon{
-      right:  20%;
-      bottom: 20%;
-    }
+  }
+  .banner .pen-icon {
+    top: 25%;
+    right: 10%;
+  }
+  .banner .note-icon {
+    left: 20%;
+    bottom: 20%;
+  }
+  .banner .mail-icon {
+    right: 20%;
+    bottom: 20%;
+  }
 
   .improve-writing .heading > div {
     gap: 36px;
@@ -1004,6 +1060,9 @@ footer .copyright h3 {
   }
 
   /* Footer */
+  footer{
+    padding-top: 200px;
+  }
   .social {
     grid-template-columns: auto auto auto;
     gap: 30px;
@@ -1021,6 +1080,7 @@ footer .copyright h3 {
   body {
     padding: 0;
   }
+  
   header {
     padding: 0;
   }
@@ -1033,8 +1093,6 @@ footer .copyright h3 {
 
   .banner .banner-content {
     width: 727px;
-
-   
   }
   .banner .banner-content h1 {
     letter-spacing: normal;
@@ -1046,7 +1104,6 @@ footer .copyright h3 {
     font-size: 24px;
     line-height: 33px;
     width: 590px;
-    
   }
 
   /* Improve Writing */
