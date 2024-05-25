@@ -11,14 +11,17 @@ const toggleNavbar = () =>{
         isNavbarOpen = false;
         navbarGripIcon.style.display = "block"
         navbarCrossIcon.style.display = "none"
-        navbarSmallDevice.style.display="none"
+        navbarSmallDevice.classList.add("slideFromBottomToTop")
+        navbarSmallDevice.classList.remove("slideFromTopToBottom")
+        navbarSmallDevice.style.display = "none";
       
     }else{
         isNavbarOpen = true;
         navbarCrossIcon.style.display = "block"
         navbarGripIcon.style.display = "none"
-       
         navbarSmallDevice.style.display="block"
+        navbarSmallDevice.classList.add("slideFromTopToBottom")
+        navbarSmallDevice.classList.remove("slideFromBottomToTop")
     }
  
 }
@@ -35,4 +38,16 @@ detailsElements.forEach(targetElement => {
             }
         })
     })
+})
+
+
+const header = document.querySelector("header")
+const main = document.querySelector("main")
+const footer = document.querySelector("footer")
+
+window.addEventListener("load",()=>{
+    document.getElementById("loader").style.display="none"
+    header.style.display="block"
+    main.style.display="block"
+    footer.style.display="block"
 })
